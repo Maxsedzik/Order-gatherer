@@ -4,12 +4,14 @@ export const StyledHeader = styled.header`
   * {
     background-color: #000020;
     color: #f4f4f4;
+    width: 100%;
   }
   ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding: 20px 0;
+  }
+  li {
+    text-align: center;
   }
   a {
     font-size: 1.6rem;
@@ -18,5 +20,3 @@ export const StyledHeader = styled.header`
     }
   }
 `;
-
-export default StyledHeader;

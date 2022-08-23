@@ -8,4 +8,7 @@ export const StyledBox = styled.div`
     padding: 1px;
     border-radius: 5px;
   }
+  p {
+    text-align: center;
+  }
 `;

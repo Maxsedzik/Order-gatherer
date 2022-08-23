@@ -1,15 +1,26 @@
 import React from "react";
 import { StyledHeader } from "./styles/Header.styled";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <StyledHeader>
-      <h1>Order Gatherer</h1>
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
-      </ul>
+      <nav>
+        <Link to="/">
+          <h1>Order Gatherer</h1>
+        </Link>
+        <ul>
+          <li>
+            <Link to="/add">Add</Link>
+          </li>
+          <li>
+            <Link to="/orders">Orders</Link>
+          </li>
+          <li>
+            <Link to="/old">Old Orders</Link>
+          </li>
+        </ul>
+      </nav>
     </StyledHeader>
   );
 };
