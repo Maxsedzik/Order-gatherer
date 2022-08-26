@@ -52,7 +52,14 @@ export const AppProvider = ({ children }) => {
     setOrders(orders.filter((order) => order.id !== id));
   };
 
-  const changeType = () => {};
+  const changeType = (id, type) => {
+    setOrders(
+      orders.map((order) =>
+        order.id === id ? (order.night = !order.night) : order.night
+      )
+    );
+  };
+
   return (
     <AppContext.Provider
       value={{
@@ -63,6 +70,7 @@ export const AppProvider = ({ children }) => {
         orders,
         alertOrder,
         deleteOrder,
+        changeType,
       }}
     >
       {children}

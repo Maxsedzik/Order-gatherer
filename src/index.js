@@ -12,4 +12,4 @@ import App from "./App";
 //REACT 18
 const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container);
-root.render(<App className="Content" />);
+root.render(<App />);

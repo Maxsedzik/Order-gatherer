@@ -16,9 +16,6 @@ const Header = () => {
           <li>
             <Link to="/orders">Orders</Link>
           </li>
-          <li>
-            <Link to="/old">Old Orders</Link>
-          </li>
         </ul>
       </nav>
     </StyledHeader>
