@@ -20,15 +20,6 @@ export const StyledForm = styled.form`
     margin: 0 3rem;
   }
 
-  .btn {
-    background-color: #1b1b1b;
-    color: #f4f4f4;
-    margin-top: 0rem;
-    &:hover {
-      cursor: pointer;
-      background-color: #000;
-    }
-  }
   .ord-name {
     display: flex;
     flex-direction: column;

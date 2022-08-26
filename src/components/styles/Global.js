@@ -27,6 +27,33 @@ const GlobalStyles = createGlobalStyle`
   margin: auto;
   padding: 0 20px;
     }
+    .btn-order-row{
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+    }
+     .btn {
+    background-color: #1b1b1b;
+    color: #f4f4f4;
+    margin-top: 0rem;
+    &:hover {
+      cursor: pointer;
+      background-color: #000;
+    }
+}
+    .btn-order{
+    background-color: #1b1b1b;
+    color: #f4f4f4;
+    font-size: 12px;
+    padding: 0 1rem;
+    margin: 0 1rem;
+     &:hover {
+      cursor: pointer;
+      background-color: #000;
+      color: #fff;
+    }
+}
+  
 `;
 
 export default GlobalStyles;
